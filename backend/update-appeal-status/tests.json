@@ -1,0 +1,32 @@
+{
+  "tests": [
+    {
+      "name": "Update appeal status",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "appealId": "1",
+        "status": "in_progress"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Invalid status",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "appealId": "1",
+        "status": "invalid_status"
+      },
+      "expectedStatus": 400,
+      "expectedBody": {
+        "error": "string"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}

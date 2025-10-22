@@ -1,0 +1,36 @@
+{
+  "tests": [
+    {
+      "name": "Submit valid appeal",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "fullName": "Иванов Иван Иванович",
+        "email": "ivanov@example.com",
+        "phone": "+7 (999) 123-45-67",
+        "category": "healthcare",
+        "subject": "Проблема с медицинским обслуживанием",
+        "description": "Долгое ожидание приёма у врача"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true,
+        "appealNumber": "string"
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Missing required fields",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "fullName": "Иванов Иван"
+      },
+      "expectedStatus": 400,
+      "expectedBody": {
+        "error": "string"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}

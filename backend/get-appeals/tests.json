@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Get all appeals",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "appeals": []
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}

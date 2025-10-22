@@ -1,0 +1,7 @@
+{
+  "get-appeal-status": "https://functions.poehali.dev/ad4bed8d-45ed-4e27-b2f5-df08fd076ecb",
+  "update-appeal-status": "https://functions.poehali.dev/63871a50-b22f-4bb0-826d-328ae51c895d",
+  "get-analytics": "https://functions.poehali.dev/447a459e-52e2-4f33-8988-45fa01e8d9b8",
+  "submit-appeal": "https://functions.poehali.dev/19be5b2e-0367-4235-a918-c0d4bfac91e0",
+  "get-appeals": "https://functions.poehali.dev/37c971e5-cf7a-4842-a172-fe75ebac6d71"
+}
